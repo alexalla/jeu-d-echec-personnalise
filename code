@@ -1,0 +1,21 @@
+#include <conio.h>
+#include<stdlib.h>
+#include<stdio.h>
+
+
+void jeu_d_echec ()
+{
+	int cheval,tour,fou,roi,reine,pion = 1;
+int table [8] [8] = {
+	{tour,cheval,fou,reine,roi,fou,cheval,tour},
+	{pion,pion,pion,pion,pion,pion,pion,pion},
+	{},
+	{},
+	{},
+	{},
+	{pion,pion,pion,pion,pion,pion,pion,pion},
+	{tour,cheval,fou,reine,roi,fou,cheval,tour},
+}
+
+
+}
