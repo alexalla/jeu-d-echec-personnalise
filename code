@@ -2,18 +2,16 @@
 #include<stdlib.h>
 #include<stdio.h>
 
+void pTour();
+
+int x=0;
+int y=0;
 
 void main ()
 {
-	char tour= 't';
-	char cheval='c';
-	char fou= 'f';
-	char reine = 'r';
-	char roi= 'R';
-	char pion= 'p';
-
- 
-	char table [8] [8] = {
+int piece;
+	int tour=0,cheval=1,fou=1,reine=1,roi=1,pion=1;
+int table [8] [8] = {
 	{tour,cheval,fou,reine,roi,fou,cheval,tour},
 	{pion,pion,pion,pion,pion,pion,pion,pion},
 	{0,0,0,0,0,0,0,0},
@@ -23,18 +21,42 @@ void main ()
 	{pion,pion,pion,pion,pion,pion,pion,pion},
 	{tour,cheval,fou,reine,roi,fou,cheval,tour}};
 
-	printf("%c,%c,%c,%c,%c,%c,%c,%c, \n %c,%c,%c,%c,%c,%c,%c,%c, \n %c,%c,%c,%c,%c,%c,%c,%c, \n %c,%c,%c,%c,%c,%c,%c,%c, \n %c,%c,%c,%c,%c,%c,%c,%c, \n %c,%c,%c,%c,%c,%c,%c,%c, \n %c,%c,%c,%c,%c,%c,%c,%c, \n %c,%c,%c,%c,%c,%c,%c,%c,", 
-		table[0][0],table[0][1],table[0][2],table[0][3],table[0][4],table[0][5],table[0][6],table[0][7],
-		table[1][0],table[1][1],table[1][2],table[1][3],table[1][4],table[1][5],table[1][6],table[1][7],
-		table[2][0],table[2][1],table[2][2],table[2][3],table[2][4],table[2][5],table[2][6],table[2][7],
-		table[3][0],table[3][1],table[3][2],table[3][3],table[3][4],table[3][5],table[3][6],table[3][7],
-		table[4][0],table[4][1],table[4][2],table[4][3],table[4][4],table[4][5],table[4][6],table[4][7],
-		table[5][0],table[5][1],table[5][2],table[5][3],table[5][4],table[5][5],table[5][6],table[5][7],
-		table[6][0],table[6][1],table[6][2],table[6][3],table[6][4],table[6][5],table[6][6],table[6][7],
-		table[7][0],table[7][1],table[7][2],table[7][3],table[7][4],table[7][5],table[7][6],table[7][7]
-	);
 
+printf("quel pion voulez vous bouger %d\n");
+scanf("%d",&piece);
 
+switch(piece) 
+{
+case 1 : 
+	pTour();
+
+	break;
+
+}
 
 getch();
+
 }
+
+void pTour()
+{
+
+	while( x < 8)
+
+{
+	printf("déplacement vertical %d\n",x);
+	x++; 
+
+}
+
+	while(y < 8)
+
+{
+	printf("déplacement horizontale %d\n",y);
+}
+
+}
+
+
+
+//fonction tour 
